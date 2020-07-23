@@ -1,0 +1,20 @@
+<%- include _header %>
+    <p class="subtitle has-text-grey">Issue Entry confirmation.</p>
+    <div class="box">
+        <figure class="avatar">
+            <img src="/index.jpg">
+        </figure>
+        <form method="post">
+            <% if (typeof error!='undefined') { %>
+                <article class="message is-danger is-small">
+                    <div class="message-body"><%=error%></div>
+                </article>
+            <% } %>
+            <div class="field">
+                <div class="control">
+                   Thanks! Your issue has been registered.
+                </div>
+            </div>
+        </form>
+    </div>
+<%- include _footer %>
